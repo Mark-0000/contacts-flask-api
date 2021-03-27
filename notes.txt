@@ -1,0 +1,23 @@
+pip install flask
+pip install flask-sqlalchemy
+
+export FLASK_APP=api.py
+
+# TERMINAL
+// import database
+from api import db
+import object constructor
+from api import Drink
+
+//create database
+db.create_all()
+
+//create object add object to database
+db.session.add(Drink(name="Cherry", description="Tastes Like Cherry"))
+db.session.commit()
+
+//get all drinks from the database
+Drink.query.all()
+
+
+
